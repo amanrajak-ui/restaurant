@@ -1,0 +1,140 @@
+@import './include.scss';
+
+
+
+@font-face {
+    font-family: goodTimes;
+    src: url('./../../assets/fonts/external/good\ times\ rg.ttf');
+}
+
+
+@font-face {
+    font-family: kanitMedium;
+    src: url('./../../assets/fonts/external/kanit-medium.otf');
+}
+
+
+
+
+#headerText-design{
+    font-size: 150%;
+    font-weight: bold;
+    letter-spacing: 1px;    
+    word-spacing: 70%;
+    font-family: goodTimes;
+}
+
+
+body{
+    
+
+   #shoppingCart-container{
+        margin-left: 5%;
+        #cart-header{
+            @extend #headerText-design;
+        }
+        #cart-itemCount{
+            margin-top: 5%;
+            font-size: 125%;
+            border-bottom: 2px solid black;
+            width: 70%;
+            font-weight: bold;
+        }
+        #cart-items-container{
+            background-color: rgba(221, 209, 209, 0.1);
+            padding: 0% ;
+            width: 90%;
+
+            .cart-item{
+                padding: 3%; 
+                height: 220px;
+                .cart-item-name{
+                    font-size: 150%;
+                }
+                .cart-item-amount{
+                    font-size: 140%;
+                }
+                .cart-item-price{
+                    font-size: 120%;
+                }
+                .cart-item-image{
+                    width: 100%;
+                    height: 200px;
+                    border: 2px solid black;
+                }     
+                .amount-controller-btn{
+                    width: 17%;
+                    height: 40px;
+                    font-size: 130%;
+                    &:hover{
+                        cursor: pointer;
+                        width: 20%;
+                    }
+                }
+
+                .quantity-row{
+                    .quantity-col{
+                        border-right: 0.5px solid black;
+                        .quantity-header{
+                            font-weight: bold;
+                        }
+                        .quantity-price{
+                            color: green;
+                        }
+                        .quantity-controller-row{
+                            margin-top: 10%;
+                            margin-left: -20px;
+                            .quantity-amount-controller{
+                                width: 45%;
+                                &:hover{
+                                    cursor: pointer;
+                                    width: 47%;
+                                }
+                            }
+                        }  
+                    }
+                      
+                }
+
+            }
+        }
+   }
+
+   #orderDetails-container{
+       #orderDetails-header{
+        @extend #headerText-design;
+        border-bottom: 2px solid black;
+        padding-bottom: 5%;
+       }
+       .orderDetails-item{
+            margin-top: 15%;
+            .orderDetails-itemTitle{
+                font-family: kanitMedium;
+                font-size: 150%;
+            }
+            #orderDetails-totalPrice{
+                font-size: 150%;
+            }
+            #payMode-selector, #orderMode-selector{
+                width: 120%;
+                font-size: 120%;
+                height: 100%;
+                padding: 5%;
+            }
+       }
+
+       #orderBtn-container{
+            margin-top: 10%;
+            button{
+                &:hover{
+                    background-color: white;
+                    color: black;
+                    border: 1px solid black;
+                }
+            }
+       }
+
+   }
+
+
+}

@@ -1,0 +1,88 @@
+.outlined-red-btn {
+  background-color: white;
+  color: #a52f26;
+  border-radius: 2px;
+  border: 1px solid #a52f26;
+}
+
+.outlined-red-btn:hover {
+  background-color: #a52f26;
+  color: white;
+}
+
+.outlined-black-btn {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.outlined-black-btn:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+.pointed-cursor:hover {
+  cursor: pointer;
+}
+
+.hover-text-grey:hover {
+  color: gray;
+}
+
+.left-floater, body #aboutUs-container .left-col-box .aboutUs-image, body #aboutUs-container .left-col-box .aboutUs-text {
+  margin-left: -15%;
+}
+
+.right-floater, body #aboutUs-container .right-col-box .aboutUs-image, body #aboutUs-container .right-col-box .aboutUs-text {
+  margin-left: 10%;
+}
+
+@font-face {
+  font-family: goodTimes;
+  src: url("./../../assets/fonts/external/good times rg.ttf");
+}
+
+body #aboutUs-container .aboutUs-row {
+  height: 500px;
+}
+
+body #aboutUs-container .aboutUs-row .aboutUs-image {
+  width: 80%;
+  border: 1px solid black;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+body #aboutUs-container .aboutUs-row .aboutUs-text {
+  margin-top: 5%;
+  font-size: 120%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: gray;
+}
+
+body #aboutUs-container .left-col-box {
+  border-right: 1px solid black;
+  text-align: center;
+}
+
+body #aboutUs-container .right-col-box {
+  text-align: center;
+}
+
+body #aboutUs-container .middle-label {
+  position: absolute;
+  display: inline-block;
+  margin-left: 37%;
+  vertical-align: middle;
+  width: 10%;
+}
+
+body #aboutUs-container .middle-label button {
+  background-color: black;
+}
+
+body #aboutUs-container .middle-label button:hover {
+  cursor: default;
+}
+/*# sourceMappingURL=about.css.map */

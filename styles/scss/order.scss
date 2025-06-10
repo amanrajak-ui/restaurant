@@ -1,0 +1,77 @@
+@import './include.scss';
+
+
+@font-face {
+    font-family: fortAnteena_medium;
+    src: url('./../../assets/fonts/external/ford-antenna-medium-cnd-587bd97171cbd.otf');
+}
+
+
+body{
+    background-color: rgba(227, 223, 223, 0.15);
+    #cancel-btn{
+        margin-left: 2%;
+        font-family: fortAnteena_medium;
+        #cancel-btn-image{
+            width: 2%;
+        }&:hover{
+            cursor: pointer;
+        }
+    }
+
+
+    #order-container{
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-top: 5%;
+        height: 400px;
+        width: 50%; 
+        #order-header{
+            padding: 3%;
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 1.5px 2px;
+            font-family: fortAnteena_medium;
+            letter-spacing: 2px;
+            word-spacing: 5px;
+        }
+
+        #order-totalAmount{
+            text-align: center;
+            font-family: fortAnteena_medium;
+            letter-spacing: 2px;
+            word-spacing: 5px;
+        }
+        .order-input{
+            width: 70%;
+            margin-top: 5%;
+            margin-left: 10%;
+        }
+
+        #location-details{
+            margin: 5% 0px 0px 0px;
+            #location-findCoords{
+                margin: 4% 0px 0px -10%; 
+                @extend .pointed-cursor;
+                @extend .hover-text-grey;   
+            }
+            #location-pin{
+                width: 20%;
+                margin: 35% 0px 0px -20%;
+                @extend .pointed-cursor;
+            }
+        }
+
+        #submit-row{
+            margin-left: 10%;
+            #scanner-image{
+                width: 60%;
+            }
+        }
+
+    }
+
+}
+
+
+
+

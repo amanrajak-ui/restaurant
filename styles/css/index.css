@@ -1,0 +1,107 @@
+.outlined-red-btn, body #home-top-container #left-body .menu-btn {
+  background-color: white;
+  color: #a52f26;
+  border-radius: 2px;
+  border: 1px solid #a52f26;
+}
+
+.outlined-red-btn:hover, body #home-top-container #left-body .menu-btn:hover {
+  background-color: #a52f26;
+  color: white;
+}
+
+.outlined-black-btn {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.outlined-black-btn:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+.pointed-cursor:hover {
+  cursor: pointer;
+}
+
+.hover-text-grey:hover {
+  color: gray;
+}
+
+body #home-top-container #left-body {
+  margin-top: 5%;
+  padding: 5% 1% 0px 5%;
+}
+
+body #home-top-container #left-body #locate-btn {
+  margin-top: 1%;
+}
+
+body #home-top-container #left-body #locate-btn #locator-icon {
+  width: 40%;
+  height: 40%;
+}
+
+body #home-top-container #left-body #locate-btn #locate-text {
+  margin-left: -10%;
+}
+
+body #home-top-container #left-body #locate-btn:hover {
+  cursor: pointer;
+  color: gray;
+}
+
+body #home-top-container #left-body #find-food-btn {
+  width: 120%;
+}
+
+body #home-top-container #right-body #slider-img {
+  width: 105%;
+  height: 500px;
+}
+
+body #cards-container {
+  background-color: rgba(99, 99, 99, 0.07);
+  padding: 5% 0px 5% 0px;
+}
+
+body #cards-container .custom-card .custom-card-img {
+  background-color: white;
+  width: 35%;
+  height: 45%;
+  -webkit-box-shadow: #636363 0px 2px 3px 0px;
+          box-shadow: #636363 0px 2px 3px 0px;
+  border-radius: 50px;
+  padding: 5%;
+  margin: 0px 0px 0px 25%;
+}
+
+body #cards-container .custom-card .custom-card-contentBox {
+  width: 100%;
+  background-color: white;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+  padding: 5%;
+  margin-top: -5%;
+}
+
+body #cards-container .custom-card .custom-card-contentBox .custom-card-header {
+  font-weight: bold;
+  margin-left: 20%;
+}
+
+body #cards-container .custom-card .custom-card-contentBox .custom-card-text {
+  margin-left: 5%;
+}
+
+body #cards-container .custom-card .custom-card-contentBox .custom-card-btn {
+  margin-left: 25%;
+}
+
+.bg-maroon {
+  background-color: #a52f26;
+  color: white;
+}
+/*# sourceMappingURL=index.css.map */

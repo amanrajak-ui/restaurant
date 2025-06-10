@@ -1,0 +1,128 @@
+.outlined-red-btn, .outlined-red-btn-inverted {
+  background-color: white;
+  color: #a52f26;
+  border-radius: 2px;
+  border: 1px solid #a52f26;
+}
+
+.outlined-red-btn:hover, .outlined-red-btn-inverted:hover {
+  background-color: #a52f26;
+  color: white;
+}
+
+.outlined-black-btn {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.outlined-black-btn:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+.pointed-cursor:hover, header .navigation-link:hover {
+  cursor: pointer;
+}
+
+.hover-text-grey:hover {
+  color: gray;
+}
+
+@font-face {
+  font-family: RockSalt;
+  src: url("./../../assets/fonts/RockSalt-Regular.ttf");
+}
+
+@font-face {
+  font-family: fortAnteena_medium;
+  src: url("./../../assets/fonts/external/ford-antenna-medium-cnd-587bd97171cbd.otf");
+}
+
+header {
+  background-color: white;
+  position: fixed;
+  z-index: 2;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 20px -5px, rgba(0, 0, 0, 0.3) 0px 8px 10px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 20px -5px, rgba(0, 0, 0, 0.3) 0px 8px 10px -8px;
+  font-size: 100%;
+  padding-top: 0.5%;
+  padding-bottom: -5%;
+  height: 70px;
+}
+
+header #logo-image {
+  margin-top: 4%;
+  width: 45%;
+  height: 45%;
+}
+
+header #header-title {
+  margin-top: 1.2%;
+  margin-left: -7%;
+  font-family: RockSalt;
+  font-size: 120%;
+  font-weight: bold;
+  color: black;
+}
+
+header #logo-image:hover, header #header-title:hover {
+  cursor: pointer;
+}
+
+header .navigation-link {
+  font-family: fortAnteena_medium;
+  letter-spacing: 1.5px;
+  margin-top: 0.2%;
+  font-size: 80%;
+}
+
+header .navigation-link .navigation-link-image {
+  width: 40%;
+}
+
+header .navigation-link #cart-items-count-indicator {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  font-size: 120%;
+  border-radius: 10px;
+}
+
+.outlined-red-btn-inverted {
+  background-color: #a52f26;
+  color: white;
+}
+
+.outlined-red-btn-inverted:hover {
+  background-color: black;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  z-index: 3;
+}
+
+footer #footerBox {
+  padding: 5%;
+}
+
+footer #footerBox #footer-headText {
+  font-family: Rocksalt;
+}
+
+footer #footerBox .footer-sectionHeader {
+  letter-spacing: 1.5px;
+  font-size: 110%;
+}
+
+footer #footerBox .footer-link {
+  margin-top: 5%;
+}
+
+footer #footerBox #footer-credits {
+  color: rgba(106, 104, 104, 0.6);
+}
+/*# sourceMappingURL=components.css.map */

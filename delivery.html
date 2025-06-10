@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Food</title>
+
+    <!-- STYLES -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./libraries/animate/animate.min.css">
+    <link rel="stylesheet" href="./libraries/bootstrap5/css/bootstrap.css">
+    <link rel="stylesheet" href="./styles/css/delivery.css">
+    <link rel="stylesheet" href="./styles/css/components.css">
+    <!-- SCRIPTS -->
+    <script src="./libraries/jquery/jquery.js"></script>
+    <script src="./libraries/bootstrap5/js/bootstrap.bundle.js"></script>   
+    <script src="./libraries/loadingOverlay/loadingoverlay.min.js"></script>
+    <script src="./scripts/helpers.js"></script>
+    <script src="./scripts/sessionManager.js"></script>
+    <script src="./components/header.js"></script>
+    <script src="./components/footer.js"></script>
+    <script src="./scripts/delivery.js"></script>
+</head>
+
+
+<header></header>
+<br /> <br /> <br /> <br /> <br />
+
+<body>
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-7" id="shoppingCart-container">
+                <h4 id="cart-header"> Shopping Cart </h4>
+                <div id="cart-itemCount">0 Items</div> <br />
+                <div id="cart-items-container"> </div>
+            </div>
+
+            <div class="col-4" id="orderDetails-container">
+                <div class="row">
+                    <div id="orderDetails-header"> Order Summary</div> 
+
+                    <div class="row orderDetails-item"> 
+                        <div class="col-4 orderDetails-itemTitle"> Order Mode:  </div>    
+                        <div class="col-1"> </div>    
+                        <div class="col-6"> 
+                            <select class="form-select" id="orderMode-selector">
+                                <option value="delivery"> Deliver to Me </option>
+                                <option value="dine"> Prepare for Takeaway </option>
+                            </select>
+                        </div>    
+                    </div>
+
+                    <div class="row orderDetails-item"> 
+                        <div class="col-4 orderDetails-itemTitle"> Payment Mode:  </div>    
+                        <div class="col-1"> </div>    
+                        <div class="col-6"> 
+                            <select class="form-select" id="payMode-selector">
+                                <option value="online"> Scan and Pay </option>
+                                <option value="offline"> Cash In Hand </option>
+                            </select>
+                        </div>    
+                    </div>
+
+                    <div class="row orderDetails-item"> 
+                        <div class="col-6 orderDetails-itemTitle"> Total Amount:  </div>    
+                        <div class="col-1"> </div>    
+                        <div class="col-3" id="orderDetails-totalPrice"> </div>    
+                    </div>
+
+                    <div class="row" id="orderBtn-container">
+                        <button class="btn btn-dark"> Proceed To Order Page </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+<br /> <br />  <br /> <br />
+<footer></footer>
+
+</html>

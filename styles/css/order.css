@@ -1,0 +1,107 @@
+.outlined-red-btn {
+  background-color: white;
+  color: #a52f26;
+  border-radius: 2px;
+  border: 1px solid #a52f26;
+}
+
+.outlined-red-btn:hover {
+  background-color: #a52f26;
+  color: white;
+}
+
+.outlined-black-btn {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.outlined-black-btn:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+.pointed-cursor:hover, body #order-container #location-details #location-findCoords:hover, body #order-container #location-details #location-pin:hover {
+  cursor: pointer;
+}
+
+.hover-text-grey:hover, body #order-container #location-details #location-findCoords:hover {
+  color: gray;
+}
+
+@font-face {
+  font-family: fortAnteena_medium;
+  src: url("./../../assets/fonts/external/ford-antenna-medium-cnd-587bd97171cbd.otf");
+}
+
+body {
+  background-color: rgba(227, 223, 223, 0.15);
+}
+
+body #cancel-btn {
+  margin-left: 2%;
+  font-family: fortAnteena_medium;
+}
+
+body #cancel-btn #cancel-btn-image {
+  width: 2%;
+}
+
+body #cancel-btn:hover {
+  cursor: pointer;
+}
+
+body #order-container {
+  background-color: white;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 5%;
+  height: 400px;
+  width: 50%;
+}
+
+body #order-container #order-header {
+  padding: 3%;
+  text-align: center;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 1.5px 2px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 1.5px 2px;
+  font-family: fortAnteena_medium;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+
+body #order-container #order-totalAmount {
+  text-align: center;
+  font-family: fortAnteena_medium;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+
+body #order-container .order-input {
+  width: 70%;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+body #order-container #location-details {
+  margin: 5% 0px 0px 0px;
+}
+
+body #order-container #location-details #location-findCoords {
+  margin: 4% 0px 0px -10%;
+}
+
+body #order-container #location-details #location-pin {
+  width: 20%;
+  margin: 35% 0px 0px -20%;
+}
+
+body #order-container #submit-row {
+  margin-left: 10%;
+}
+
+body #order-container #submit-row #scanner-image {
+  width: 60%;
+}
+/*# sourceMappingURL=order.css.map */

@@ -1,0 +1,65 @@
+
+@import './include.scss';
+
+
+.left-floater{
+    margin-left: -15%;
+}
+.right-floater{
+    margin-left: 10%;
+}
+
+@font-face {
+    font-family: goodTimes;
+    src: url('./../../assets/fonts/external/good\ times\ rg.ttf');
+}
+
+
+body{
+    #aboutUs-container{
+        .aboutUs-row{
+            height: 500px;
+            .aboutUs-image{
+                width: 80%;
+                border: 1px solid black;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                //filter: brightness(75%) contrast(140%); 
+            }
+            .aboutUs-text{
+                margin-top: 5%;
+                font-size: 120%;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: gray;    
+            }
+        }
+
+        .left-col-box{
+            border-right: 1px solid black;
+            text-align: center;
+            .aboutUs-image, .aboutUs-text{
+                @extend .left-floater;
+            }
+        }
+        .right-col-box{
+            text-align: center;
+            .aboutUs-image, .aboutUs-text{
+                @extend .right-floater;
+            }
+        }
+
+        
+        .middle-label{
+            position: absolute;
+            display: inline-block;
+           margin-left: 37%;
+            vertical-align: middle;
+            width: 10%;
+            button{
+                background-color: black;
+                &:hover{
+                    cursor: default ;
+                }
+            }
+        }
+    }
+}

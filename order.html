@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+
+    <!-- STYLES -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./libraries/animate/animate.min.css">
+    <link rel="stylesheet" href="./libraries/bootstrap5/css/bootstrap.css">
+    <link rel="stylesheet" href="./styles/css/order.css">
+    <link rel="stylesheet" href="./styles/css/components.css">
+    <!-- SCRIPTS -->
+    <script src="./libraries/jquery/jquery.js"></script>
+    <script src="./libraries/bootstrap5/js/bootstrap.bundle.js"></script>   
+    <script src="./libraries/loadingOverlay/loadingoverlay.min.js"></script>
+    <script src="./scripts/helpers.js"></script>
+    <script src="./scripts/sessionManager.js"></script>
+    <script src="./components/header.js"></script>
+    <script src="./components/footer.js"></script>
+    <script src="./components/sideBar.js"></script>
+    <script src="./scripts/order.js"></script>
+</head>
+
+
+<header></header>
+<section class="container animate__animated" id="sideBar"></section>
+<br /> <br /> <br /> <br /> <br />
+
+<body>
+
+    <div id="cancel-btn"> 
+        <img src="./assets/icons/svgs/left.svg" id="cancel-btn-image">
+        &nbsp; Cancel
+    </div>
+
+    <div class="container" id="order-container">
+        <div class="row" id="order-header"> <h3> Verify Your Order </h3> </div>
+        <br />
+        <div class="row">
+            <div id="order-totalAmount">Total: ₹0</div>     
+            <input class="form-control order-input" placeholder="Contact Number*"/> 
+
+            <div id="location-details" class="row">
+                <div class="col-8"> <input class="form-control order-input" placeholder="Delivery Location*" id="location-input"/> </div>
+                <div class="col-2" id="location-findCoords"> Locate Me </div>
+                <div class="col-2"> <img src="./assets/icons/svgs/locatorPin.svg" id="location-pin"> </div>
+            </div>
+
+            <div class="row" id="submit-row">
+                <div class="col-6" id="scanner-image-col">
+                    <img src="./assets/important/scanner.jpg" id="scanner-image"/> <br />
+                </div>
+                <div class="col-6">
+                    <button class="btn outlined-black-btn"> Proceed with Order </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<br /> <br />  <br /> <br />
+<footer></footer>
+
+</html>

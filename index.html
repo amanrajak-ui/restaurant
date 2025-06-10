@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek's Restaurant</title>
+    <!-- STYLES -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./libraries/animate/animate.min.css">
+    <link rel="stylesheet" href="./libraries/bootstrap5/css/bootstrap.css">
+    <link rel="stylesheet" href="./styles/css/index.css">
+    <link rel="stylesheet" href="./styles/css/components.css">
+    <!-- SCRIPTS -->
+    <script src="./libraries/jquery/jquery.js"></script>
+    <script src="./libraries/bootstrap5/js/bootstrap.bundle.js"></script> 
+    <script src="./libraries/loadingOverlay/loadingoverlay.min.js"></script>
+    <script src="./scripts/helpers.js"></script>  
+    <script src="./scripts/sessionManager.js"></script>
+    <script src="./components/header.js"></script>
+    <script src="./components/footer.js"></script>
+    <script src="./scripts/index.js"></script>
+</head>
+
+
+<header></header>
+
+
+
+<body>
+  <div class="container-fluid" id="home-top-container">
+    <div class="row">
+      <div class="col-6" id="left-body"> 
+        <div>
+          <h2> <b> Hungry? </b> </h2>
+          <h5> Order Food or Prepare in advance in just 2 minutes! </h5>
+        </div>
+        <br /> <br />
+        <div>
+          <select class="form-select" id="selection-manager">
+            <option selected value="delivery"> Deliver to Me </option>
+            <option value="dine"> Prepare for Take Away </option>
+          </select> <br /> <br />
+          <div id="selection-container"> </div>
+        </div>
+      </div>
+
+      <div class="col-6" id="right-body"> 
+        <img src="./assets/slider/chicken_tikka.jpg" id="slider-img" class="animate__animated animate__fadeIn">
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  
+  <div class="container-fluid" id="cards-container">
+    <div class="row">
+
+      <div class="col-3 custom-card"> 
+        <div class="custom-card-img-box">
+          <img class="custom-card-img" src="./assets/icons/home/delivery-car-svgrepo-com.png"/>
+        </div>
+        <div class="custom-card-contentBox">
+          <h5 class="custom-card-header"> Fast Delivery </h5>
+          <div class="custom-card-text"> 
+            Safe and Fast Delivery in 5 mins
+          </div> <br />
+          <button class="btn outlined-red-btn custom-card-btn" id="orderModes">Learn More</button>
+        </div>
+      </div>
+
+
+      <div class="col-3 custom-card"> 
+        <div class="custom-card-img-box">
+          <img class="custom-card-img" src="./assets/icons/home/food-dinner-svgrepo-com.png"/>
+        </div>
+        <div class="custom-card-contentBox">
+          <h5 class="custom-card-header"> Order for Takeaway </h5>
+          <div class="custom-card-text"> 
+            Prepare food to be ready in advance
+          </div> <br />
+          <button class="btn outlined-red-btn custom-card-btn" id="orderModes">Learn More</button>
+        </div>
+      </div>
+
+
+      <div class="col-3 custom-card"> 
+        <div class="custom-card-img-box">
+          <img class="custom-card-img" src="./assets/icons/home/cart-trolley-ui-5-svgrepo-com.png"/>
+        </div>
+        <div class="custom-card-contentBox">
+          <h5 class="custom-card-header"> Create Cart </h5>
+          <div class="custom-card-text"> 
+            Buy Multiple Items at once easily!
+          </div> <br />
+          <button class="btn outlined-red-btn custom-card-btn" id="cart">Learn More</button>
+        </div>
+      </div>
+
+
+      <div class="col-3 custom-card"> 
+        <div class="custom-card-img-box">
+          <img class="custom-card-img" src="./assets/icons/home/contact-video-call-svgrepo-com.png"/>
+        </div>
+        <div class="custom-card-contentBox">
+          <h5 class="custom-card-header"> Easy Contact </h5>
+          <div class="custom-card-text"> 
+            Contact the Restaurant for queries
+          </div> <br />
+          <button class="btn outlined-red-btn custom-card-btn" id="contacts">Learn More</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+<footer></footer>
+</html>

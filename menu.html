@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <!-- STYLES -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./libraries/animate/animate.min.css">
+    <link rel="stylesheet" href="./libraries/bootstrap5/css/bootstrap.css">
+    <link rel="stylesheet" href="./styles/css/menu.css">
+    <link rel="stylesheet" href="./styles/css/components.css">
+    <!-- SCRIPTS -->
+    <script src="./libraries/jquery/jquery.js"></script>
+    <script src="./libraries/bootstrap5/js/bootstrap.bundle.js"></script>   
+    <script src="./libraries/loadingOverlay/loadingoverlay.min.js"></script>
+    <script src="./scripts/helpers.js"></script>
+    <script src="./scripts/sessionManager.js"></script>
+    <script src="./components/header.js"></script>
+    <script src="./components/footer.js"></script>
+    <script type="text/javascript" src="./store/menuStore.js"></script>
+    <script src="./scripts/menu.js"></script>
+</head>
+
+
+<header></header>
+<div id="item-added-alerter" class="alert alert-success"> </div>
+<br /> <br /> <br /> <br /> <br />
+
+<body>
+  <button class="btn outlined-black-btn" id="goto-cart-btn"> Buy Now</button>
+  <nav class="row" id="selection-menu">
+    <div class="col-1 menu-header-box" id="starters-box"> <img src="./assets/icons/menuIcons/starters.svg" class="menu-header" />  <div class="menu-label"> Starters </div>  </div>
+    <div class="col-1 menu-header-box" id="soup-box"> <img src="./assets/icons/menuIcons/soup.svg" class="menu-header" />  <div class="menu-label"> Soup </div>  </div>
+    <div class="col-1 menu-header-box" id="drinks-box"> <img src="./assets/icons/menuIcons/drinks.svg" class="menu-header" />  <div class="menu-label"> Drinks </div>  </div>
+    <div class="col-1 menu-header-box" id="maincourse-box"> <img src="./assets/icons/menuIcons/maincourse.svg" class="menu-header" />  <div class="menu-label"> Dinner </div>  </div>
+    <div class="col-1 menu-header-box" id="rice-box"> <img src="./assets/icons/menuIcons/rice.svg" class="menu-header" />  <div class="menu-label"> Rice </div>  </div>
+    <div class="col-1 menu-header-box" id="egg-box"> <img src="./assets/icons/menuIcons/egg.svg" class="menu-header" />  <div class="menu-label"> Egg </div>  </div>
+    <div class="col-1 menu-header-box" id="bread-box"> <img src="./assets/icons/menuIcons/bread.svg" class="menu-header" />  <div class="menu-label"> Bread / Roti </div>  </div>
+    <div class="col-1 menu-header-box" id="chinese-box"> <img src="./assets/icons/menuIcons/chinese.svg" class="menu-header" />  <div class="menu-label"> Chinese </div>  </div>
+    <div class="col-1 menu-header-box" id="salad-box"> <img src="./assets/icons/menuIcons/salad.svg" class="menu-header" />  <div class="menu-label"> Salad </div>  </div>
+  </nav> <hr />
+  <br />
+  <nav class="row" id="category-menu">
+    <div class="col-1"> <img src="./assets/icons/svgs/filter.svg"> </div>
+    <div class="col-3 mt-2"> Filter Food Categories </div>
+    <div class="col-3"></div>
+    <div class="row" id="category-container">
+    </div>
+  </nav>
+
+  <section>
+    <div class='container'>
+      <div class='row' id="menu-itemsList">
+          
+      </div>
+  </div>
+  </section>
+
+</body>
+
+<br /> <br />  <br /> <br />
+<footer></footer>
+</html>

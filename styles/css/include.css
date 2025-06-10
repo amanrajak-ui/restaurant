@@ -1,0 +1,32 @@
+.outlined-red-btn {
+  background-color: white;
+  color: #a52f26;
+  border-radius: 2px;
+  border: 1px solid #a52f26;
+}
+
+.outlined-red-btn:hover {
+  background-color: #a52f26;
+  color: white;
+}
+
+.outlined-black-btn {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.outlined-black-btn:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+.pointed-cursor:hover {
+  cursor: pointer;
+}
+
+.hover-text-grey:hover {
+  color: gray;
+}
+/*# sourceMappingURL=include.css.map */

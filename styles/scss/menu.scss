@@ -1,0 +1,155 @@
+@import './include.scss';
+
+
+@font-face {
+    font-family: Manslavia;
+    src: url('./../../assets/fonts/Mansalva-Regular.ttf');
+}
+
+@font-face {
+    font-family: fortAnteena_medium;
+    src: url('./../../assets/fonts/external/ford-antenna-medium-cnd-587bd97171cbd.otf');
+}
+
+
+#item-added-alerter{
+    position: fixed;
+    margin: 5% 0px 0px 40%;
+    z-index: 2;
+}
+
+
+body{
+    #selection-menu{
+        .menu-header-box{
+            margin-left: 2%;
+            &:hover{
+                cursor: pointer;
+                background-color: rgba(206, 237, 226, 0.5);
+            }
+            .menu-header{
+                width: 100%;
+                height: 40%;
+                //border-right: 1px solid black;
+            }
+            .menu-label{
+                margin-left: 20%;
+                //border-right: 1px solid black;
+                color: black;
+                font-size: 110%;
+                font-family: Manslavia;
+            }
+        }
+        
+    }
+    .selected-menu{
+        border-top: 5px solid lightblue; 
+    }
+
+
+
+    #category-menu{
+        margin-left: 5%;
+        background-color: rgba(205, 202, 202, 0.2);
+        width: 80%;
+        padding: 2% 5% 2%% 5%;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 110%;
+        border-radius: 5px;
+
+        input{
+            width: 100%;
+            padding: 3%;
+            border: none;
+            border-bottom: 2px solid aquamarine;
+        }
+
+        img{
+            display: inline;
+            width: 80%;
+            height: 100%;
+            //border-right: 1px solid black;
+        }
+
+        #category-container{
+            margin-top: 2%;
+            .category-item{
+                padding: 10px 0% 10px 0%;
+                img{
+                    width: 150%;
+                    height: 100%;
+                }
+                &:hover{
+                    cursor: pointer;
+                    background-color: rgba(206, 237, 226, 0.5); 
+                }
+            }
+        }
+    }
+    .selected-category{
+        border-top: 5px solid lightblue; 
+    }
+
+
+
+    #menu-itemsList{
+
+        .menu-item-card{
+            padding: 2%;
+            margin-top: 5%;
+            background-color: rgba(243, 236, 236, 0.35);
+            .card{
+                //box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                box-shadow: rgb(38, 57, 77) 0px 20px 20px -10px;
+            }
+            .card-title{
+                font-family: fortAnteena_medium;
+                letter-spacing: 1.5px;
+                word-spacing: 5px;
+            }
+            .card-body{
+                border: 1px solid black;
+            }
+            .card-text{
+                margin-top: 5%;
+            }
+            .menuItem-image{
+                width: 100%;
+                height: 300px;
+                border: 1px solid black;
+            }
+            .cart-btn{
+                @extend .outlined-black-btn;
+            }
+        }
+        .item-price{
+            font-size: 120%;
+        }
+    }
+
+
+    .outlined-red-btn-inverted{
+        @extend .outlined-red-btn;
+        background-color: $logoBackground;
+        color: white;
+        &:hover{
+            background-color: white;
+            color: $logoBackground;
+        }
+    }
+
+    
+
+    #goto-cart-btn{
+        position: fixed;
+        z-index: 1;
+        height: 10%;
+        margin: 10% 0% 0% 90%;
+        border-radius:  10px;
+        @extend .outlined-red-btn-inverted;
+    }
+
+}
+
+
+

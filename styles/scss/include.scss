@@ -1,0 +1,54 @@
+
+$logoBackground: #a52f26;
+
+
+// --------------------- BUTTONS  --------------------
+.outlined-red-btn{
+    background-color: white;
+    color: $logoBackground;
+    border-radius: 2px;
+    border: 1px solid $logoBackground;
+    &:hover{
+        background-color: #a52f26;
+        color: white;
+    }
+}
+
+
+.outlined-black-btn{
+    //@extend .outlined-red-btn;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    &:hover{
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+    }
+}
+
+
+
+.pointed-cursor{
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.hover-text-grey{
+    &:hover{
+        color: gray;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

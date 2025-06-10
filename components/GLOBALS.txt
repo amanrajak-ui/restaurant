@@ -1,0 +1,16 @@
+ 
+----------------------  userDetails [JSON object that holds userdetails] -----------------
+ 1. contactNo 
+ 2. location:  coords(longitude- latitude) of user's current address
+ 3. totalPrice:  sum of prices of all items in userCart
+ 4. address:  user address (location coords converted to string)
+ 5. redirect_aboutSection:     if user has set about us section in learn more, it redirects to it
+
+
+----------------------   cartDetails [Array of JSON objects that holds all items in cart]   -------------
+1. name: food name
+2. amount
+3. price (of 1 unit)
+
+
+

@@ -1,0 +1,171 @@
+.outlined-red-btn, body .outlined-red-btn-inverted, body #goto-cart-btn {
+  background-color: white;
+  color: #a52f26;
+  border-radius: 2px;
+  border: 1px solid #a52f26;
+}
+
+.outlined-red-btn:hover, body .outlined-red-btn-inverted:hover, body #goto-cart-btn:hover {
+  background-color: #a52f26;
+  color: white;
+}
+
+.outlined-black-btn, body #menu-itemsList .menu-item-card .cart-btn {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.outlined-black-btn:hover, body #menu-itemsList .menu-item-card .cart-btn:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+.pointed-cursor:hover {
+  cursor: pointer;
+}
+
+.hover-text-grey:hover {
+  color: gray;
+}
+
+@font-face {
+  font-family: Manslavia;
+  src: url("./../../assets/fonts/Mansalva-Regular.ttf");
+}
+
+@font-face {
+  font-family: fortAnteena_medium;
+  src: url("./../../assets/fonts/external/ford-antenna-medium-cnd-587bd97171cbd.otf");
+}
+
+#item-added-alerter {
+  position: fixed;
+  margin: 5% 0px 0px 40%;
+  z-index: 2;
+}
+
+body #selection-menu .menu-header-box {
+  margin-left: 2%;
+}
+
+body #selection-menu .menu-header-box:hover {
+  cursor: pointer;
+  background-color: rgba(206, 237, 226, 0.5);
+}
+
+body #selection-menu .menu-header-box .menu-header {
+  width: 100%;
+  height: 40%;
+}
+
+body #selection-menu .menu-header-box .menu-label {
+  margin-left: 20%;
+  color: black;
+  font-size: 110%;
+  font-family: Manslavia;
+}
+
+body .selected-menu {
+  border-top: 5px solid lightblue;
+}
+
+body #category-menu {
+  margin-left: 5%;
+  background-color: rgba(205, 202, 202, 0.2);
+  width: 80%;
+  padding: 2% 5% 2%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 110%;
+  border-radius: 5px;
+}
+
+body #category-menu input {
+  width: 100%;
+  padding: 3%;
+  border: none;
+  border-bottom: 2px solid aquamarine;
+}
+
+body #category-menu img {
+  display: inline;
+  width: 80%;
+  height: 100%;
+}
+
+body #category-menu #category-container {
+  margin-top: 2%;
+}
+
+body #category-menu #category-container .category-item {
+  padding: 10px 0% 10px 0%;
+}
+
+body #category-menu #category-container .category-item img {
+  width: 150%;
+  height: 100%;
+}
+
+body #category-menu #category-container .category-item:hover {
+  cursor: pointer;
+  background-color: rgba(206, 237, 226, 0.5);
+}
+
+body .selected-category {
+  border-top: 5px solid lightblue;
+}
+
+body #menu-itemsList .menu-item-card {
+  padding: 2%;
+  margin-top: 5%;
+  background-color: rgba(243, 236, 236, 0.35);
+}
+
+body #menu-itemsList .menu-item-card .card {
+  -webkit-box-shadow: #26394d 0px 20px 20px -10px;
+          box-shadow: #26394d 0px 20px 20px -10px;
+}
+
+body #menu-itemsList .menu-item-card .card-title {
+  font-family: fortAnteena_medium;
+  letter-spacing: 1.5px;
+  word-spacing: 5px;
+}
+
+body #menu-itemsList .menu-item-card .card-body {
+  border: 1px solid black;
+}
+
+body #menu-itemsList .menu-item-card .card-text {
+  margin-top: 5%;
+}
+
+body #menu-itemsList .menu-item-card .menuItem-image {
+  width: 100%;
+  height: 300px;
+  border: 1px solid black;
+}
+
+body #menu-itemsList .item-price {
+  font-size: 120%;
+}
+
+body .outlined-red-btn-inverted, body #goto-cart-btn {
+  background-color: #a52f26;
+  color: white;
+}
+
+body .outlined-red-btn-inverted:hover, body #goto-cart-btn:hover {
+  background-color: white;
+  color: #a52f26;
+}
+
+body #goto-cart-btn {
+  position: fixed;
+  z-index: 1;
+  height: 10%;
+  margin: 10% 0% 0% 90%;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=menu.css.map */
